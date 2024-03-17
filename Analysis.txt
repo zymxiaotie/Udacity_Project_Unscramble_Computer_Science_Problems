@@ -1,0 +1,43 @@
+Runtime analysis for the tasks based on : 
+
+
+1. Task0.py : 
+- Time complexity is O(1) 
+- Explaination: O(1) means run time is constant regardless of the input size. as the code will run twice printing disregard the input size. 
+
+2. Task1.py: 
+- Time complexity: O(n)
+- Explaination: 
+there are two "for" loops, for each "for" loop, we do twice adding elements to a set. 
+other lines of coding have constant time complexity.
+In total, the time complexity is O(n) based on Worst-Case scenario
+
+3. Task2.py: 
+- Time complexity: O(n)
+- Explaination: 
+For the first "for" loop, we have two "if", "else" condition which assign or add values
+time complexity for the "for" loop is order of O(2*len(calls)). 
+There is one max function, which finds the max value in n unique phone numbers, time complexity is O(n).
+For the Last "for" loop, we iterate the unique phone numbers to find the max call duration, the time complexity is O(n)
+other codes has constant time complexity.
+In total, time complexity is O(n) based on Worst-Case scenario
+
+4. Task3.py: 
+- Time complexity: O(nlogn)
+- Explaination: 
+First, we have a for loop, which have time complexity of O(n),
+Then, we sort the telephone codes, which have time complexity of O(nlogn), n as the unique values of the codes
+Next, we use another for loop to print, which has time complexity of O(n)
+Last, for other codes, the time complexity is O(1)
+In total, the time complexity is O(nlogn) based on worst case scenario.
+
+5. Task4.py: 
+- Time complexity: O(nlogn)
+- Explaination: 
+we defined four sets of variables: outgoing_calls, incoming_calls, send_texts, receive_texts.
+each has time complexity of O(n) (n as input size) as list comprehention takes O(n).
+we used sort function which has time complexity of O(nlogn) (n as the number of telemarketers). 
+Additionally, we use for loop to print out the sorted telemarkters, which has O(n) time complexity. 
+other codes take O(1) time complexity.
+In total, we have O(nlogn) base on Worse-Case scenario. 
+
